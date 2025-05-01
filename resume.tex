@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Vanshaj Saxena
+% Website: https://github.com/vanshajsaxena/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{5pt} % Set a minimum foot skip to satisfy fancyhdr
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in} % reclaim the text area reduced by `\oddsidemargin`
+\addtolength{\topmargin}{-.5in} % need .5in space from top
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1 % no need with tectonic
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.vanshaj.xyz/}{\Huge Vanshaj Saxena}} & Email : \href{mailto:vanshajsaxena2005@gmail.com}{vanshajsaxena2005@gmail.com}\\
+  \href{https://www.vanshaj.xyz/}{https://www.vanshaj.xyz/} & Mobile : +91-76685-66620 \\
+\end{tabular*}
+
+% \begin{center}
+%     \textbf{\Huge \scshape Vanshaj Saxena} \\ \vspace{1pt}
+%     \small +91-76685-66620 $|$ \href{mailto:vanshajsaxena2005@gmail.com}{\underline{vanshajsaxena2005@gmail.com}} $|$
+%     \href{https://linkedin.com/in/vanshajsaxenaxyz}{\underline{linkedin.com/in/vanshajsaxenaxyz}} $|$
+%     \href{https://github.com/VanshajSaxena}{\underline{github.com/vanshajsaxena}}
+% \end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Galgotias University}{Aug. 2021 -- Aug. 2025}
+      {Bachelor of Technology and Computer Science Engineering}{Greater Noida, UP}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer Intern}{June 2024 -- July 2024}
+      {Infosys Limited}{Mysuru, KA}
+      \resumeItemListStart
+        \resumeItem{Designed and Developed a robust software as a service (SaaS) for a library management system, while also leading a cross-functional team of 10 using Scrum methodologies.}
+        \resumeItem{Developed robust Firebase/Firestore integrations for real-time data sync and offline access, resulting in a 20-40\% improvement in app responsiveness.}
+        \resumeItem{Designed and integrated automated build and test pipelines using GitHub Actions and Jira, reducing manual release tasks by 80\%, accelerating build time for new features.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Open Source Contributions}{Oct. 2023 -- Present}
+      {Lua Plugin Development}{GitHub, World}
+      \resumeItemListStart
+        \resumeItem{Contributed to open-source Lua projects, collaborating with the developer community to drive improvements and expand functionality.}
+        \resumeItem{Enhanced developer tools and workflows, streamlining development processes and improving productivity by automating manual tasks by 30\%.}
+        \resumeItem{Improved code maintainability and scalability by refactoring over 1000 lines of legacy components and applying software engineering best practices.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Auction Hub} $|$ \emph{Java, Spring Boot, REST API, JWT, MySQL}}{Dec. 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Designed \& implemented a Spring Boot 3 microservice for online auctions, exposing RESTful endpoints for user management, product listing, bidding, and auction scheduling.}
+            \resumeItem{Automated API model/controller generation via OpenAPI Generator plugin and documented endpoints with Springdoc OpenAPI (Swagger), achieving 100\% endpoint coverage in interactive API docs. }
+            \resumeItem{Secured the platform with Spring Security and JWT, enforcing role-based access control and stateless authentication.}
+            \resumeItem{Streamlined development with Lombok and MapStruct for boilerplate reduction, improving code maintainability and reducing manual mapping errors by 75\%.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Fable} $|$ \emph{Swift, SwiftUI, Firebase/Firestore, Git}}{June 2024 -- July 2024}
+          \resumeItemListStart
+            \resumeItem{Employed Swift and SwiftUI with an MVVM architecture to build a multi-tenant SaaS application.}
+            \resumeItem{Integrated Firebase Authentication and Cloud Firestore, enabling secure user management and real-time data syncing for over 1,000 test users with near-zero latency.}
+            \resumeItem{Implemented local caching, conflict resolution, and asynchronous networking to ensure seamless offline access, improving app responsiveness by 40\%.}
+            \resumeItem{Configured GitHub Actions for continuous integration, unit tests, and UI testing, achieving over 70\% test coverage and reducing post-release defects.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, Swift, Lua} \\
+     \textbf{Frameworks}{: Spring Framework, Spring Boot, Spring Web, Spring Security} \\
+     \textbf{Developer Tools}{: GNU/Linux Coreutils, Git, GitHub, Eclipse, Neovim, OpenAPI (Swagger)} \\
+     \textbf{Concepts}{: Object Oriented Programming, Data Structures and Algorithms, Dependency Injection}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
