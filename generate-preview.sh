@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-magick -density 250 "Resume - Vanshaj Saxena.pdf" -background white -alpha remove resume-preview.png
+magick -density 200 "Resume - Vanshaj Saxena.pdf" -background white -alpha remove resume-preview.png
