@@ -24,7 +24,7 @@ jobs:
 
       - name: Build resume
         run: |
-          tectonic resume.tex
+          tectonic 'Resume - Vanshaj Saxena.tex'
 
       - name: Commit PDF if changed
         run: |
