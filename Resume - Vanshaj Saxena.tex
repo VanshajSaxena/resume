@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
 %\input{glyphtounicode}
 
 
@@ -107,8 +108,10 @@
 \begin{document}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.vanshaj.xyz/}{\Huge Vanshaj Saxena}} & Email : \underline{\href{mailto:vanshajsaxena2005@gmail.com}{vanshajsaxena2005@gmail.com}}\\
-  \underline{\href{https://www.vanshaj.xyz/}{https://www.vanshaj.xyz/}} & Mobile : +91-76685-66620 \\
+  \textbf{\href{https://www.vanshajsaxena.com/}{\Huge Vanshaj Saxena}} & \raisebox{-0.5ex}{\faEnvelope[regular]} \underline{\href{mailto:contact@vanshajsaxena.com}{contact@vanshajsaxena.com}}\\
+  \raisebox{-0.5ex}{\faGlobe} \underline{\href{https://www.vanshajsaxena.com/}{vanshajsaxena.com}} \quad
+  \raisebox{-0.5ex}{\faGithub} \underline{\href{https://www.github.com/vanshajsaxena}{vanshajsaxena}}
+ & Mobile : +91-76685-66620 \\
 \end{tabular*}
 
 % \begin{center}
@@ -124,7 +127,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Galgotias University}{Aug. 2021 -- Aug. 2025}
-      {Bachelor of Technology and Computer Science Engineering (8.5/10)}{Greater Noida, UP}
+      {Bachelor of Technology in Computer Science Engineering (8.5/10)} {Greater Noida, UP}
   \resumeSubHeadingListEnd
 
 
@@ -132,13 +135,21 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+\resumeSubheading
+      {Software Developer Trainee}{July 2025 - Present}
+      {United Registrar of Systems}{Noida, UP}
+      \resumeItemListStart
+        \resumeItem{The core responsibility is to maintain internal tools and backend systems that enable the company to perform its business operations across the country.}
+        \resumeItem{Rewrote a small part of a 15 year old codebase that is essential to business operations, using modern technologies like React and Typescript.}
+        \resumeItem{Developed a backend API that helps business manipulate MS Word documents programmatically to automate time consuming routine tasks.}
+        \resumeItem{Worked on architecting a backend API that handles simple CRUD operations and creates on-demand business reports.}
+      \resumeItemListEnd
     \resumeSubheading
-      {Software Development Intern}{June 2024 -- July 2024}
+      {iOS Intern}{June 2024 - July 2024}
       {Infosys Limited}{Mysuru, KA}
       \resumeItemListStart
-        \resumeItem{Designed and developed a Software as a Service (SaaS) library management system, while leading a cross-functional team of 10 using Agile methodologies.}
-        \resumeItem{Developed robust Firebase/Firestore integrations for real-time data sync and offline access, resulting in a 20-40\% improvement in app responsiveness.}
-        \resumeItem{Integrated and automated build and test pipelines using GitHub Actions and Jira, reducing manual release tasks by 80\%, accelerating build time for new features.}
+        \resumeItem{Contributed to the development of a Software as a Service (SaaS) LMS, testing integration, developing features and delivering feature modules.}
+        \resumeItem{Also lead a team of 10 members as Scrum Master under Agile methodologies.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -151,14 +162,6 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
-      {Open Source Contributions}{}
-      {Lua Plugin Development}{GitHub, World}
-      \resumeItemListStart
-        \resumeItem{Contributed to open-source Lua projects, collaborating with the developer community to drive improvements and expand functionality.}
-        \resumeItem{Enhanced developer tools and workflows, streamlining development processes and improving productivity by automating manual tasks by 30\%.}
-        \resumeItem{Improved code maintainability and scalability by refactoring over 1000 lines of legacy components and applying software engineering best practices.}
-    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -167,20 +170,25 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-        {\textbf{\underline{\href{https://github.com/VanshajSaxena/auction-system}{Auction Hub}}} $|$ \emph{Java, Spring Boot, Hibernate, OpenAPI, JUnit, REST, JPA }}{Dec. 2024 -- Present}
+        {\textbf{{URS Backend}} $|$ \emph{TypeScript, C\#, React, ASP.NET Core, Zustand, Tanstack, IDB}}{July. 2025 - Present}
           \resumeItemListStart
-            \resumeItem{Conceptualized \& implemented a Spring Boot 3 microservice for online auctions, exposing RESTful endpoints for user management, product listing, bidding, and auction scheduling.}
-            \resumeItem{Automated API model/controller generation via OpenAPI Generator plugin and documented endpoints with Springdoc OpenAPI (Swagger), achieving 100\% endpoint coverage in interactive API docs. }
-            \resumeItem{Secured the platform with Spring Security and JWT, enforcing role-based access control and stateless authentication.}
-            \resumeItem{Streamlined development with Lombok and MapStruct for boilerplate reduction, improving code maintainability and reducing manual mapping errors by 100\%.}
+            \resumeItem{Rewrote a module of a Web Forms based application and restructured the architecture to separate business logic between the frontend and backend layers.}
+            \resumeItem{Developed a backend API that generates OpenXML compliant Word documents by searching for tags within templates and replacing them with data from the database to generate business reports.}
+            \resumeItem{Developed a single-page application (SPA) using React and TypeScript, bundled with Vite (Rollup), leveraging Zustand for UI state management and TanStack for server state.}
           \resumeItemListEnd
       \resumeProjectHeading
-      {\textbf{\underline{\href{https://github.com/VanshajSaxena/LMS_User}{Fable}}} $|$ \emph{Swift, SwiftUI, Firebase/Firestore, Git}}{June 2024 -- July 2024}
+        {\textbf{\underline{\href{https://github.com/VanshajSaxena/auction-system}{Auction Hub}}} $|$ \emph{Java, Spring Boot, Hibernate, OpenAPI, JUnit, REST, JPA }}{Dec. 2024 - Mar. 2025}
           \resumeItemListStart
-            \resumeItem{Employed Swift and SwiftUI with an MVVM architecture to build a multi-tenant SaaS application.}
-            \resumeItem{Integrated Firebase Authentication and Cloud Firestore, enabling secure user management and real-time data syncing for over 1,000 test users with near-zero latency.}
-            \resumeItem{Implemented local caching, conflict resolution, and asynchronous networking to ensure seamless offline access, improving app responsiveness by 40\%.}
-            \resumeItem{Configured GitHub Actions for continuous integration, and UI testing, reducing post-release defects.}
+            \resumeItem{Designed and developed a Spring Boot 3 application for online auctions, exposing RESTful endpoints for user management, product listing, bidding, and auction scheduling.}
+            \resumeItem{Created a secure platform with the use of Spring Security and JWT based authorization, enforcing role-based access control and stateless authentication.}
+            \resumeItem{Simplified development process with the use of tools like Lombok and MapStruct, which improved code readability, maintainability and eliminated manual mapping errors.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+      {\textbf{\underline{\href{https://github.com/VanshajSaxena/LMS_User}{Fable}}} $|$ \emph{Swift, SwiftUI, Firebase/Firestore, Git}}{June 2024 - July 2024}
+          \resumeItemListStart
+            \resumeItem{Using Swift and SwiftUI contributed to building a multi-tenant SaaS application.}
+            \resumeItem{Used Firebase Authentication and Cloud Firestore, to enable secure user management and real-time data fetching.}
+            \resumeItem{Contributed to architecturing a simple CI pipeline, for automated testing and building artifacts.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -191,10 +199,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, Swift, Lua} \\
-     \textbf{Frameworks \& Tools}{: Spring Boot, Spring Security, Hibernate, OpenAPI (Swagger), JUnit, Mockito} \\
-     \textbf{Developer Environment}{: GNU/Linux, Git, GitHub, Eclipse, Neovim} \\
-     \textbf{Concepts}{: Monoliths, OOPs, Dependency Injection, JWT, REST API}
+     \textbf{Languages}{: TypeScript, C\#, Java} \\
+     \textbf{Databases}{: MS SQL, PostgreSQL, Firestore} \\
+     \textbf{Frameworks \& Tools}{: React, ASP.NET Core, Zustand, Tanstack, Spring Boot} \\
+     \textbf{Concepts}{: OOPs, Functional Programming, Concurrency, Dependency Injection, JWT, REST}
     }}
  \end{itemize}
 
