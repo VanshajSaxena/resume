@@ -6,6 +6,9 @@ on:
     paths:
       - "Resume - Vanshaj Saxena.pdf"
 
+permissions:
+  contents: write
+
 jobs:
   generate-preview:
     runs-on: ubuntu-latest
