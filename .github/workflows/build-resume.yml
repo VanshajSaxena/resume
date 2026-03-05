@@ -1,0 +1,35 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install Tectonic
+        run: |
+          curl --proto '=https' --tlsv1.2 -LsSf https://github.com/tectonic-typesetting/tectonic/releases/latest/download/tectonic-x86_64-unknown-linux-gnu.tar.gz \
+          | tar -xz
+          sudo mv tectonic /usr/local/bin/
+
+      - name: Build resume
+        run: |
+          tectonic resume.tex
+
+      - name: Commit PDF if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add *.pdf
+          git diff --cached --quiet || git commit -m "build: update resume pdf"
+          git push
