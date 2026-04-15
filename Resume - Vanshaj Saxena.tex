@@ -57,7 +57,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-7pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 %\pdfgentounicode=1 % no need with tectonic
@@ -71,7 +71,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-    \item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -138,19 +138,28 @@
       {Software Developer}{July 2025 - Present}
       {United Registrar of Systems}{Noida, UP}
       \resumeItemListStart
-        \resumeItem{Maintaining and improving internal tools and backend systems supporting nation-wide operations, ensuring high availability and performance.}
+        \resumeItem{Maintained and improved internal tools and the backend system supporting nation-wide operations, ensuring high availability and performance.}
         \resumeItem{Modernized a small module of a 15-year old web forms application that is essential to business operations, using modern technologies like React and Typescript.}
         \resumeItem{Engineered a backend API for programmatic MS Word manipulation, reducing manual reporting time to half for routine business tasks.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Founder}{Dec. 2025 - Present}
+      {Printit}{Ghaziabad, UP}
+      \resumeItemListStart
+        \resumeItem{Built a SaaS product from scratch as a solo founder, owning the product journey from idea, design, and development through to launch.}
+        \resumeItem{Replaced a manual, high-friction printing workflow with a seamless self-serve experience, significantly improving usability and reducing operational effort.}
+        \resumeItem{Owned the full product lifecycle, continuously improving the solution based on user behavior and operational feedback.}
       \resumeItemListEnd
     \resumeSubheading
       {iOS Intern}{June 2024 - July 2024}
       {Infosys Limited}{Mysuru, KA}
       \resumeItemListStart
-        \resumeItem{Contributed to the development of a SaaS LMS by testing integrations, developing and delivering feature modules, while leading a 10-member team as Scrum Master under Agile methodologies.}
+        \resumeItem{Contributed to the development of a SaaS-based Library Management System (LMS), focusing on testing integrations and building and delivering key product features.}
+        \resumeItem{Served as Scrum Master for a 10-member Agile team, facilitating sprint planning, execution, and delivery to ensure smooth and timely releases.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-% -----------Multiple Positions Heading-----------
+% -----------Multiple Positions Heading-----
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
 %     \resumeItemListStart
@@ -166,7 +175,7 @@
     \resumeProjectHeading
       {\textbf{\underline{\href{https://printit.ink}{Printit}}}~\faLink [solid] $|$ \emph{TypeScript, C\#, React, Electron, NestJS, PostgreSQL, WebSockets}}{Dec. 2025 - Present}
         \resumeItemListStart
-          \resumeItem{Architected and deployed a multi-tenant SaaS platform featuring a Progressive Web App, Electron-based desktop application, and a NestJS backend, delivering a seamless user experience.}
+          \resumeItem{Architected and deployed a multi-tenant SaaS platform comprising a Progressive Web App, Electron-based desktop application, and a NestJS backend, delivering a seamless user experience.}
           \resumeItem{The Electron and PWA apps were designed to enable automated printing, reporting, and monitoring of print jobs with minimal human intervention, reducing waiting times and improving efficiency.}
           \resumeItem{Developed a universal printing layer using Windows Printing API ensuring 100\% compatibility across diverse printer models and configurations.}
         \resumeItemListEnd
