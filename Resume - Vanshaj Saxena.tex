@@ -56,7 +56,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-7pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -71,7 +71,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{0pt}\item
+    \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -102,7 +102,7 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%
 
 
 \begin{document}
@@ -134,9 +134,8 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
-\resumeSubheading
-      {Software Developer Trainee}{July 2025 - Present}
+    \resumeSubheading
+      {Software Developer}{July 2025 - Present}
       {United Registrar of Systems}{Noida, UP}
       \resumeItemListStart
         \resumeItem{Maintaining and improving internal tools and backend systems supporting nation-wide operations, ensuring high availability and performance.}
@@ -149,7 +148,8 @@
       \resumeItemListStart
         \resumeItem{Contributed to the development of a SaaS LMS by testing integrations, developing and delivering feature modules, while leading a 10-member team as Scrum Master under Agile methodologies.}
       \resumeItemListEnd
-      
+  \resumeSubHeadingListEnd
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -158,56 +158,46 @@
 %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
 %     \resumeItemListEnd
 %    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-
-  \resumeSubHeadingListEnd
-
+% ------------------------------------------
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
+  \resumeSubHeadingListStart
     \resumeProjectHeading
-        {\textbf{\underline{\href{https://printit.ink}{Printit}}}~\faLink [solid] $|$ \emph{TypeScript, C\#, React, Electron, NestJS, PostgreSQL, WebSockets}}{Dec. 2025 - Present}
-          \resumeItemListStart
-            \resumeItem{Architected and deployed a multi-tenant SaaS platform featuring a Progressive Web App, Electron-based desktop application, and a NestJS backend, delivering a seamless user experience.}
-            \resumeItem{The Electron and PWA apps were designed to enable automated printing, reporting, and monitoring of print jobs with minimal human intervention, reducing waiting times and improving efficiency.}
-            \resumeItem{Developed a universal printing layer using Windows Printing API ensuring 100\% compatibility across diverse printer models and configurations.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{{URS Backend}} $|$ \emph{TypeScript, C\#, React, ASP.NET Core, Zustand, Tanstack, IDB}}{July 2025 - Present}
-          \resumeItemListStart
-            \resumeItem{Rewrote a module of a Web Forms based application and restructured the architecture to separate business logic between the frontend and backend layers.}
-            \resumeItem{Developed a backend API that generates OpenXML compliant Word documents by searching for tags within templates and replacing them with data from the database to generate business reports.}
-            \resumeItem{Developed a single-page application (SPA) using React and TypeScript, bundled with Vite (Rollup), leveraging Zustand for UI state management and TanStack for server state.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{\underline{\href{https://github.com/VanshajSaxena/auction-system}{Auction Hub}}}~\faLink [solid] $|$ \emph{Java, Spring Boot, Hibernate, OpenAPI, JUnit, REST, JPA }}{Dec. 2024 - Mar. 2025}
-          \resumeItemListStart
-            \resumeItem{Designed and developed a Spring Boot 3 application for online auctions, exposing RESTful endpoints for user management, product listing, bidding, and auction scheduling.}
-            \resumeItem{Created a secure platform with the use of Spring Security and JWT based authorization, enforcing role-based access control and stateless authentication.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-      {\textbf{\underline{\href{https://github.com/VanshajSaxena/LMS_User}{Fable}}}~\faLink [solid] $|$ \emph{Swift, SwiftUI, Firebase/Firestore, Git}}{June 2024 - July 2024}
-          \resumeItemListStart
-            \resumeItem{Contributed to building a multi-tenant SaaS application using SwiftUI, integrating Firebase Authentication and Cloud Firestore for secure user management and real-time data handling.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+      {\textbf{\underline{\href{https://printit.ink}{Printit}}}~\faLink [solid] $|$ \emph{TypeScript, C\#, React, Electron, NestJS, PostgreSQL, WebSockets}}{Dec. 2025 - Present}
+        \resumeItemListStart
+          \resumeItem{Architected and deployed a multi-tenant SaaS platform featuring a Progressive Web App, Electron-based desktop application, and a NestJS backend, delivering a seamless user experience.}
+          \resumeItem{The Electron and PWA apps were designed to enable automated printing, reporting, and monitoring of print jobs with minimal human intervention, reducing waiting times and improving efficiency.}
+          \resumeItem{Developed a universal printing layer using Windows Printing API ensuring 100\% compatibility across diverse printer models and configurations.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{{URS Backend}} $|$ \emph{TypeScript, C\#, React, ASP.NET Core, Zustand, Tanstack, IDB}}{July 2025 - Present}
+        \resumeItemListStart
+          \resumeItem{Rewrote a module of a Web Forms based application and restructured the architecture to separate business logic between the frontend and backend layers.}
+          \resumeItem{Developed a backend API that generates OpenXML compliant Word documents by searching for tags within templates and replacing them with data from the database to generate business reports.}
+          \resumeItem{Developed a single-page application (SPA) using React and TypeScript, bundled with Vite (Rollup), leveraging Zustand for UI state management and TanStack for server state.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{\underline{\href{https://github.com/VanshajSaxena/auction-system}{Auction Hub}}}~\faLink [solid] $|$ \emph{Java, Spring Boot, Hibernate, OpenAPI, JUnit, REST, JPA }}{Dec. 2024 - Mar. 2025}
+        \resumeItemListStart
+          \resumeItem{Designed and developed a Spring Boot 3 application for online auctions, exposing RESTful endpoints for user management, product listing, bidding, and auction scheduling.}
+          \resumeItem{Created a secure platform with the use of Spring Security and JWT based authorization, enforcing role-based access control and stateless authentication.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+    {\textbf{\underline{\href{https://github.com/VanshajSaxena/LMS_User}{Fable}}}~\faLink [solid] $|$ \emph{Swift, SwiftUI, Firebase/Firestore, Git}}{June 2024 - July 2024}
+        \resumeItemListStart
+          \resumeItem{Contributed to building a multi-tenant SaaS application using SwiftUI, integrating Firebase Authentication and Cloud Firestore for secure user management and real-time data handling.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-
-
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, C\#, Java} \\
-     \textbf{Databases}{: MS SQL, PostgreSQL, Firestore} \\
-     \textbf{Frameworks \& Tools}{: React, ASP.NET Core, Zustand, Tanstack, Spring Boot, Git, Unix/Linux} \\
-     \textbf{Concepts}{: Object Oriented Programming, Functional Programming, Concurrency, REST, Software Development, Networking Fundamentals, Performance Tuning, Security Fundamentals, Source Control}
+    \textbf{Languages}{: TypeScript, C\#, Java} \\
+    \textbf{Databases}{: MS SQL, PostgreSQL, Firestore} \\
+    \textbf{Frameworks \& Tools}{: React, ASP.NET Core, Zustand, Tanstack, Spring Boot, Git, Unix/Linux} \\
+    \textbf{Concepts}{: Object Oriented Programming, Functional Programming, Concurrency, REST, Software Development, Networking Fundamentals, Performance Tuning, Security Fundamentals, Source Control}
     }}
- \end{itemize}
-
-
-%-------------------------------------------
+  \end{itemize}
 \end{document}
